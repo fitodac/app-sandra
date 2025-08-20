@@ -1,17 +1,10 @@
 {
-  "buildCommand": "pnpm run build",
-  "devCommand": "pnpm run dev",
-  "installCommand": "pnpm install",
-  "framework": "nextjs",
   "regions": ["iad1"],
   "env": {
     "NODE_OPTIONS": "--no-deprecation --max-old-space-size=8000"
   },
   "functions": {
-    "src/app/**/*.ts": {
-      "maxDuration": 30
-    },
-    "src/app/**/*.js": {
+    "src/app/**/*.{js,ts}": {
       "maxDuration": 30
     }
   },
