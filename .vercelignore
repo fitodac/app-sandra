@@ -1,0 +1,50 @@
+# Vercel ignore file
+# Files and directories to exclude from deployment
+
+# Development files
+.env.local
+.env.development
+.env.test
+
+# Testing
+tests/
+*.test.ts
+*.test.js
+*.spec.ts
+*.spec.js
+playwright.config.ts
+vitest.config.mts
+vitest.setup.ts
+
+# Development tools
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache directories
+.next/cache/
+node_modules/.cache/
+
+# Documentation
+README-DEPLOY.md
+
+# Scripts
+scripts/deploy-vercel.sh
+scripts/RLS.sql
+
+# Docker files
+Dockerfile
+docker-compose.yml
+
+# Misc
+.DS_Store
+*.tgz
+*.tar.gz
+
+# Backup files
+*.backup
+*.bak
+*.tmp
